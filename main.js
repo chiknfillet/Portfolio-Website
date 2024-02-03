@@ -32,16 +32,12 @@ const showMenu = ( toggleId, navId ) => {
       }
     } )
   } )
+
   
-  // function linkAction() {
-  //   /*Active link*/
-  //   navLinks.forEach((n) => n.classList.remove("active"));
-  //   this.classList.add("active");
-  
-  //   /*Remove menu mobile*/
+
   const navMenu = document.getElementById( "nav-menu" );
-  //   navMenu.classList.remove("show");
-  // }
+
+
   navLinks.forEach( ( n ) => n.addEventListener( "click", () => { navMenu.classList.remove( "show" ) } ) );
   
   /*===== COPY Email =====*/
@@ -77,10 +73,9 @@ const showMenu = ( toggleId, navId ) => {
   sr.reveal( ".skills-subtitle", {} );
   sr.reveal( ".skills-text", {} );
   sr.reveal( ".skills-data", { interval: 100 } );
-  // sr.reveal(".skills-img", { delay: 600 });
+
   
   /*SCROLL projects*/
   sr.reveal( ".project-img", { interval: 200 } );
   
-  /*SCROLL CONTACT*/
-  // sr.reveal(".contact-input", { interval: 200 });
+
